@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Makes Us Different</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#EE6F4B',
+                        'dark': '#161723',
+                        'medium': '#424153',
+                        'light': '#F8F8F8',
+                        'border': '#E3E3E8'
+                    },
+                      fontFamily: {
+              inter: ['Inter Tight', 'sans-serif'],
+            },
+                }
+            }
+        }
+    </script>
+    <style>
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            position: relative;
+        }
+        .central-image {
+            width: 370px;
+            height: 370px;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .payment-icon {
+            width: 39px;
+            height: 14px;
+        }
+        .section-image {
+            width: 570px;
+            height: 570px;
+            position: relative;
+        }
+        .content-image {
+            width: 570px;
+            height: 480px;
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            .feature-icon, .central-image, .payment-icon, .section-image, .content-image {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1/1;
+            }
+            .central-image {
+                max-width: 370px;
+                max-height: 370px;
+            }
+        }
+    </style>
+</head>
+<body class="font-inter">
+    <!-- Main Section -->
+    <div class="h-auto bg-white flex flex-col items-center px-4 py-20">
+        <!-- Heading -->
+        <div class="text-center mb-10">
+            <h1 class="text-3xl md:text-[40px] leading-[120%] font-bold text-gray-900">
+                What makes us different<br>makes them stronger
+            </h1>
+        </div>
+
+        <!-- Main Content -->
+        <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-6 items-center mb-10">
+            <!-- Left Text -->
+            <div class="flex flex-col space-y-[80px]">
+                <div class="flex items-start space-x-[24px]">
+                    <div class="feature-icon">
+                        <img src="/images/food 1.svg" alt="Real Food Icon" class="w-full h-full object-contain">
+                    </div>
+                    <div class='space-y-[8px]'>
+                        <h3 class="font-semibold text-[19px] text-gray-900">Real Food</h3>
+                        <p class="text-gray-600 text-[16px]">
+                            Wholesome recipes for dogs with real meat and veggies.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-[24px]">
+                    <div class="feature-icon">
+                        <img src="/images/pet-bowl 1 (1).svg" alt="Premium Ingredient Icon" class="w-full h-full object-contain">
+                    </div>
+                    <div class='space-y-[8px]'>
+                        <h3 class="font-semibold text-[19px] text-gray-900">Premium Ingredient</h3>
+                        <p class="text-gray-600 text-[16px]">
+                            Elevating pet care with unmatched safety and quality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Image -->
+            <div class="flex justify-center my-8 md:my-0">
+                <div class="central-image bg-gray-100 ">
+                    <img src="images/Frame 1171276495.svg" alt="Dog Food Bowl" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Right Text -->
+            <div class="flex flex-col space-y-[80px]">
+                <div class="flex items-start space-x-[24px]">
+                    <div class="feature-icon">
+                        <img src="/images/pet-food 1.svg" alt="Made Fresh Icon" class="w-full h-full object-contain">
+                    </div>
+                    <div class='space-y-[8px]'>
+                        <h3 class="font-semibold text-[19px] text-gray-900">Made Fresh</h3>
+                        <p class="text-gray-600 text-[16px]">
+                            We prioritize maintaining the integrity of whole foods and nutrition.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-[24px]">
+                    <div class="feature-icon">
+                        <img src="/images/vet 1.svg" alt="Vet Developed Icon" class="w-full h-full object-contain">
+                    </div>
+                    <div class='space-y-[8px]'>
+                        <h3 class="font-semibold text-[19px] text-gray-900">Vet Developed</h3>
+                        <p class="text-gray-600 text-[16px]">
+                            We raise the bar for dog nutrition, surpassing industry expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+            <button class="bg-primary hover:bg-orange-600 text-white w-full max-w-[426px] font-semibold px-[40px] py-[12px] rounded-lg shadow transition duration-300">
+                Get your dog's healthy meal today!
+            </button>
+            <div class="mt-4 text-xs text-gray-500 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-6">
+                <span class='flex gap-2 items-center'>
+                    <img src="/images/shield-check.svg" alt="Shield" class="w-4 h-4"> 30-day money back guarantee
+                </span>
+                <div class="flex space-x-1">
+                    <img src="/images/image 25.svg" alt="Visa" class="payment-icon">
+                    <img src="/images/image 26.svg" alt="Mastercard" class="payment-icon">
+                    <img src="/images/image 27.svg" alt="PayPal" class="payment-icon">
+                    <img src="/images/image 28.svg" alt="Google Pay" class="payment-icon">
+                    <img src="/images/image 29.svg" alt="Apple Pay" class="payment-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nutrition Section -->
+    <section class="bg-light text-medium py-20 px-4 md:px-16">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-10">
+            <!-- Left Content -->
+            <div class="w-full lg:w-[570px]">
+                <h2 class="text-3xl md:text-4xl font-bold leading-tight text-dark mb-4">
+                    Nutrition is the foundation for <br>
+                    longer, healthier lives in dogs.
+                </h2>
+                <p class="w-full lg:w-[90%] leading-relaxed mb-[48px]">
+                    Invest in your dog's future with our scientifically formulated superfood-powered supplements.
+                    Give them the nutrition they deserve and watch them thrive with vitality, energy,
+                    and the joy of a longer, healthier life.
+                </p>
+
+                <h3 class="font-semibold text-[19px] text-dark mb-3">Key Points:</h3>
+                <ul class="space-y-4 text-sm w-full lg:w-[90%]">
+                    <li class="flex items-start gap-4 md:gap-[48px] border-b border-border pb-4">
+                        <span class="text-primary font-bold text-[33px]">97%</span>
+                        <span>Dogs choose our dog food over leading brands because of its real functional ingredients and delicious flavor.</span>
+                    </li>
+                    <li class="flex items-start gap-4 md:gap-[48px] border-b border-border pb-4">
+                        <span class="text-primary font-bold text-[33px]">84%</span>
+                        <span>Our dog food provides superior nutrition and a patented probiotic for optimal nutrient absorption.</span>
+                    </li>
+                    <li class="flex items-start gap-4 md:gap-[48px] pb-4">
+                        <span class="text-primary font-bold text-[33px]">92%</span>
+                        <span>Our dog food's high protein and fat digestibility contribute to ideal stool quality.</span>
+                    </li>
+                </ul>
+
+                <button class="mt-8 bg-primary hover:bg-orange-600 w-full max-w-[538px] text-white font-medium px-6 py-3 rounded transition duration-300">
+                    Give your furry friend the gift of wholesome nutrition
+                </button>
+            </div>
+
+            <!-- Right Image -->
+            <div class="w-full lg:w-[570px] flex justify-center">
+                <div class="section-image bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="/images/Rectangle 15.png" alt="Dog with dog food" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gastrointestinal Health Section -->
+    <section class="w-full px-6 py-20 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+            <!-- Image -->
+            <div class="w-full lg:w-[570px]">
+                <div class="content-image bg-gray-100 rounded-xl overflow-hidden">
+                    <img src="/images/9a4409f684a5519dabc916a48f3dd3616198aa78.gif" alt="Dog eating" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <!-- Text content -->
+            <div class="w-full lg:w-[570px]">
+                <h2 class="text-3xl md:text-[40px] leading-[120%] font-bold text-dark">
+                    Improve overall gastrointestinal health for better nutrient absorption
+                </h2>
+                <p class="mt-4 text-[16px] w-full lg:w-[90%] leading-[150%] text-medium">
+                    Through rigorous scientific studies and consultations with veterinarians, we have created a breakthrough formula exclusively tailored to combat the health challenges prevalent in dogs. A staggering 91% of our customers have reported significant improvements in their dogs' health after incorporating our product into their diet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prebiotics Section -->
+    <section class="w-full px-6 py-16 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+            <!-- Text content -->
+            <div class="w-full lg:w-[570px]">
+                <h2 class="text-3xl md:text-[40px] leading-[120%] font-bold text-dark">
+                    Prebiotics nourish the beneficial gut bacteria, supporting digestive health
+                </h2>
+                <p class="mt-4 text-[16px] leading-[150%] w-full lg:w-[90%] text-medium">
+                    Our dog food formula contains carefully selected prebiotics that work in harmony with the gut microbiota, providing the necessary nutrients for the growth and maintenance of beneficial bacteria, ultimately supporting digestive health.
+                </p>
+            </div>
+            <!-- Image -->
+            <div class="w-full lg:w-[570px]">
+                <div class="content-image bg-gray-100 rounded-xl overflow-hidden">
+                    <img src="/images/29e727e2150c8fca8f87c017fe9ac37b42bfc610 (1).jpg" alt="Dog with food" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
